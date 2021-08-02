@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading: #ffffff;
+  --content: #d7d7d7;
+  --body: #e6e8eb;
+  --background: #494c4b;
+  --details: #44bd32;
+
+  --gradient-green-2: linear-gradient(
+    135deg,
+    #37b979 0%,
+    #517385 100%,
+    #517385 100%
+  );
+  --gradient-green-1: linear-gradient(135deg, #47e9dd 0%, #d5c570 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
