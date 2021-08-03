@@ -20,6 +20,10 @@
   --gradient-green-1: linear-gradient(135deg, #47e9dd 0%, #d5c570 100%);
 }
 
+body {
+  color: var(--heading);
+}
+
 a {
   color: inherit;
   text-decoration: none;
