@@ -8,9 +8,9 @@ import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.container}>
+      <Header />
       <main>
-        <Header />
         <Component {...pageProps} />
       </main>
       <Player />

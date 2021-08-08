@@ -2,7 +2,7 @@ import Image from 'next/image'
 import format from 'date-fns/format'
 import ptBR from 'date-fns/locale/pt-BR'
 
-import styles from './header.module.scss'
+import styles from './styles.module.scss'
 
 const Header = (): JSX.Element => {
   const currentDate = format(new Date(), 'EEEEEE, d MMM', {

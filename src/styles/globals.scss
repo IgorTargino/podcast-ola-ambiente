@@ -5,6 +5,8 @@
 }
 
 :root {
+  --white: #fff;
+
   --heading: #ffffff;
   --content: #d7d7d7;
   --body: #e6e8eb;
@@ -27,4 +29,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

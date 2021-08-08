@@ -1,0 +1,25 @@
+.container,
+.logo {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.container {
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 1rem;
+
+  background: var(--background);
+
+  .logo {
+    h1 {
+      font: 500 1.375rem Rubik;
+    }
+  }
+
+  span {
+    font: 500 0.875rem Rubik;
+  }
+}
