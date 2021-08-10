@@ -1,11 +1,11 @@
 {
   "episodes": [
     {
-      "id": "a-importancia-da-contribuicao-em-open-source",
-      "title": "Faladev #30 | A importância da contribuição em Open Source",
+      "id": "1",
+      "title": "Lixo eletrônico",
       "members": "Dego Fernandes, João Pedro, Diego Haz e Bruno Lemos",
-      "thumbnail": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/opensource.jpg",
-      "description": "<p>Nesse episódio do Faladev, Diego Fernandes se reúne com João Pedro Schmitz, Bruno Lemos e Diego Haz, para discutir sobre a importância da contribuição open source e quais desafios circulam na comunidade.</p>",
+      "thumbnail": "https://storage.googleapis.com/podcast-ola-mundo/acidifica%C3%A7%C3%A3o.png",
+      "description": "<p>Este episódio aborda sobre o lixo eletrônico. Estamos deparando-se constantemente com anúncios e propagandas que fomentam o consumo. Quase todo dia a mídia propaga lançamentos ou versões mais atualizadas de equipamentos eletroeletrônicos (EEE) e sempre instigando ao consumismo, que é uma prática maléfica, visto que, leva a comprar excessivamente e até mesmo sem necessidade. Atrelado a isto, a vida útil dos EEE é um outro fator que leva ao consumidor aderir a novos dispositivos. De acordo com o El País (2018), um celular poderia durar em média 12 anos, se não fosse a obsolescência programada, que limita o tempo de uso</p>",
       "file": {
         "url": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/audios/opensource.m4a",
         "type": "audio/x-m4a",
@@ -13,11 +13,11 @@
       }
     },
     {
-      "id": "uma-conversa-sobre-programacao-funcional-e-orientacao-a-objetos",
-      "title": "Faladev #29 | Duas perspectivas diferentes na mesa: uma conversa sobre PF e OOP",
-      "members": "Dego Fernandes, Dani Leão, Laura Beatris e Rafael Camarda",
-      "thumbnail": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/funcional.jpg",
-      "description": "<p>Diego e Dani receberam Laura Beatris e Rafael Camarda na mesa do Faladev para conversarem sobre programação funcional e programação orientada a objetos.</p>",
+      "id": "2",
+      "title": "Tratamento de água",
+      "members": "Maura Anastacia e Jorge Marinho",
+      "thumbnail": "https://storage.googleapis.com/podcast-ola-mundo/tratamento-de-agua.png",
+      "description": "<p>Este episódio aborda sobre o Tratamento de água. A água faz parte de vários processos essenciais para a manutenção da vida. Usamos ela para beber, tomar banho, na produção de alimentos, na indústria, além disso, cobre cerca de 71% da superfície da Terra (GRASSI, 2001), como, também, compõe aproximadamente 70% do corpo humano (FREITAS e VASCONCELOS, 2019). Desta forma, a potabilização da água é necessária para manutenção de uma boa qualidade de vida para o ser humano. E para a nossa conversa, teremos um convidado especialista na área de tratamento de água, Jorge Marinho. </p>",
       "file": {
         "url": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/audios/funcional.m4a",
         "type": "audio/x-m4a",
@@ -25,9 +25,9 @@
       }
     },
     {
-      "id": "barreiras-e-solucoes-propostas-por-micro-servicos",
-      "title": "Faladev #28 | Por trás de barreiras e soluções propostas por micro-serviços",
-      "members": "Dego Fernandes, Dani Leão, Wesley Williams e Lucas Santos",
+      "id": "3",
+      "title": "Efeito estufa",
+      "members": "Maura Anastacia e Levi Souza",
       "thumbnail": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/microservicos.jpg",
       "description": "<p>Os desenvolvedores Wesley Willians e Lucas Santos foram convidados para este Faladev para ter uma conversa sobre o que são micro-serviços e quais são os desafios e as barreiras de sua aplicação.</p><p>Nessa edição, Diego Fernandes e Daniele Evangelista guiam a conversa levantando tópicos e questionamentos relevantes sobre o assunto.</p>",
       "file": {
@@ -37,11 +37,11 @@
       }
     },
     {
-      "id": "aplicacao-de-arquiteturas-mvc-e-clean-architecture-na-pratica",
-      "title": "Faladev #27 | Aplicação de arquiteturas MVC e CA na prática",
+      "id": "4",
+      "title": "Acidificação dos oceanos/ Branqueamentos dos corais",
       "members": "Dego Fernandes, Dani Leão, Otávio Lemos e Rodrigo Branas",
-      "thumbnail": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/clean.jpg",
-      "description": "<p>Diego Fernandes e Daniele Evangelista receberam Otávio Lemos e Rodrigo Branas para bater um papo sobre arquiteturas modernas de desenvolvimento, aplicadas na indústria da tecnologia.</p><p>Quais são os fundamentos, os princípios e a importância de debater arquiteturas neste ecossistema?</p>",
+      "thumbnail": "https://storage.googleapis.com/podcast-ola-mundo/acidifica%C3%A7%C3%A3o.png",
+      "description": "<p>Este episódio aborda sobre a acidificação dos oceanos e branqueamento dos corais. O gás carbônico (CO2) está presente na atmosfera desde muito antes da existênciados seres humanos e faz parte do ciclo biogeoquímico do carbono. Inclusive é vital para existência de vida do planeta, pois, através das trocas gasosas que ocorrem no processo de fotossíntese, é possível remover boa parte de CO2 da atmosfera e produzir oxigênio. Apesar de ser essencial em paramentos naturais, as ações antrópicas tem intensificado a emissão de CO2 na atmosfera configurando um aumento significativo na temperatura do planeta, como também, uma quantidade considerável de CO2 antropogênico está sendo </p>",
       "file": {
         "url": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/audios/clean.m4a",
         "type": "audio/x-m4a",
