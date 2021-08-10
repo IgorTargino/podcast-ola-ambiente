@@ -48,7 +48,8 @@ export default function Home({ listEpisodes }: Props): ReactNode {
             <div className={styles.info}>
               <h1>{episode.title}</h1>
               <span>{episode.members}</span>
-              <span>22 jan 21| {episode.duration}</span>
+              <br></br>
+              <span>22 jan 21 | {episode.duration}</span>
             </div>
             <ButtonPlay />
           </div>
