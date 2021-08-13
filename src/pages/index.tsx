@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { ReactNode } from 'react'
 import ButtonPlay from '../components/ButtonPlay'
 import api from '../services/api'
+import convertDurationToTimeString from '../utils/convertDurationToTimeString'
 
 import styles from './home.module.scss'
 
@@ -20,7 +21,6 @@ interface EpisodeData {
 }
 
 interface Episode {
-  id: string
   title: string
   thumbnail: string
   members: string
@@ -36,9 +36,9 @@ export default function Home({ listEpisodes }: Props): ReactNode {
   return (
     <div className={styles.container}>
       <div className={styles.containerEpisodes}>
-        {listEpisodes.map((episode) => {
+        {listEpisodes.map((episode, index) => {
           return (
-            <div className={styles.episode} key={episode.id}>
+            <div className={styles.episode} key={index}>
               <Image
                 src={episode.thumbnail}
                 alt="logo"
@@ -66,11 +66,13 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const episodes = data.map((episode: EpisodeData) => {
     return {
-      id: episode.id,
       title: episode.title,
       thumbnail: episode.thumbnail,
       members: episode.members,
       duration: Number(episode.file.duration),
+      durationAsString: convertDurationToTimeString(
+        Number(episode.file.duration)
+      ),
       url: episode.file.url,
     }
   })
