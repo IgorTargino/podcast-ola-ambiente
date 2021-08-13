@@ -10,7 +10,8 @@
         "url": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/audios/opensource.m4a",
         "type": "audio/x-m4a",
         "duration": 3981
-      }
+      },
+      "roteiro": "https://storage.googleapis.com/podcast-ola-mundo/roteiros/LixoEletr%C3%B4nico.pdf"
     },
     {
       "id": "2",
@@ -22,7 +23,8 @@
         "url": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/audios/funcional.m4a",
         "type": "audio/x-m4a",
         "duration": 4237
-      }
+      },
+      "roteiro": "https://storage.googleapis.com/podcast-ola-mundo/roteiros/Tratamento%20de%20%C3%A1gua.pdf"
     },
     {
       "id": "3",
@@ -34,7 +36,8 @@
         "url": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/audios/microservicos.m4a",
         "type": "audio/x-m4a",
         "duration": 5506
-      }
+      },
+      "roteiro": "https://storage.googleapis.com/podcast-ola-mundo/roteiros/Acidifica%C3%A7%C3%A3odosoceanos.pdf"
     },
     {
       "id": "4",
@@ -46,7 +49,8 @@
         "url": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/audios/clean.m4a",
         "type": "audio/x-m4a",
         "duration": 5044
-      }
+      },
+      "roteiro": "https://storage.googleapis.com/podcast-ola-mundo/roteiros/Acidifica%C3%A7%C3%A3odosoceanos.pdf"
     }
   ]
 }
