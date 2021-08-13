@@ -18,6 +18,7 @@ interface EpisodeData {
     type: string
     duration: string
   }
+  roteiro: string
 }
 
 interface Episode {
@@ -25,7 +26,9 @@ interface Episode {
   thumbnail: string
   members: string
   duration: number
+  durationAsString: string
   url: string
+  roteiro: string
 }
 
 interface Props {
@@ -74,6 +77,7 @@ export const getStaticProps: GetStaticProps = async () => {
         Number(episode.file.duration)
       ),
       url: episode.file.url,
+      roteiro: episode.roteiro,
     }
   })
 
