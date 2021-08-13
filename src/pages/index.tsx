@@ -35,26 +35,28 @@ interface Props {
 export default function Home({ listEpisodes }: Props): ReactNode {
   return (
     <div className={styles.container}>
-      {listEpisodes.map((episode) => {
-        return (
-          <div className={styles.containerEpisode} key={episode.id}>
-            <Image
-              src={episode.thumbnail}
-              alt="logo"
-              width={150}
-              height={150}
-              quality={100}
-            />
-            <div className={styles.info}>
-              <h1>{episode.title}</h1>
-              <span>{episode.members}</span>
-              <br></br>
-              <span>22 jan 21 | {episode.duration}</span>
+      <div className={styles.containerEpisodes}>
+        {listEpisodes.map((episode) => {
+          return (
+            <div className={styles.episode} key={episode.id}>
+              <Image
+                src={episode.thumbnail}
+                alt="logo"
+                width={150}
+                height={150}
+                quality={100}
+              />
+              <div className={styles.info}>
+                <h1>{episode.title}</h1>
+                <span>{episode.members}</span>
+                <br></br>
+                <span>22 jan 21 | {episode.duration}</span>
+              </div>
+              <ButtonPlay />
             </div>
-            <ButtonPlay />
-          </div>
-        )
-      })}
+          )
+        })}
+      </div>
     </div>
   )
 }

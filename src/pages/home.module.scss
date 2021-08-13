@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   justify-content: center;
   align-items: center;
@@ -13,7 +13,14 @@
   background: var(--gradient-green-2);
 }
 
-.containerEpisode {
+.containerEpisodes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  gap: 2rem;
+}
+
+.episode {
   display: flex;
   flex-direction: column;
 
@@ -36,8 +43,6 @@
   }
 
   &:hover {
-    filter: brightness(0.9);
-    border: 1px solid #222;
     cursor: pointer;
   }
 }
