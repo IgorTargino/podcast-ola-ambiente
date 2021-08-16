@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next'
 import Image from 'next/image'
 import { ReactNode } from 'react'
-import ButtonPlay from '../components/ButtonPlay'
+import { usePlayer } from '../context/PlayerContext'
 import api from '../services/api'
 import convertDurationToTimeString from '../utils/convertDurationToTimeString'
 
@@ -32,14 +32,16 @@ interface Episode {
 }
 
 interface Props {
-  listEpisodes: Array<Episode>
+  episodeList: Array<Episode>
 }
 
-export default function Home({ listEpisodes }: Props): ReactNode {
+export default function Home({ episodeList }: Props): ReactNode {
+  const { playList } = usePlayer()
+
   return (
     <div className={styles.container}>
       <div className={styles.containerEpisodes}>
-        {listEpisodes.map((episode, index) => {
+        {episodeList.map((episode, index) => {
           return (
             <div className={styles.episode} key={index}>
               <Image
@@ -53,9 +55,20 @@ export default function Home({ listEpisodes }: Props): ReactNode {
                 <h1>{episode.title}</h1>
                 <span>{episode.members}</span>
                 <br></br>
-                <span>22 jan 21 | {episode.duration}</span>
+                <span>{episode.duration}</span>
               </div>
-              <ButtonPlay />
+
+              <button
+                type="button"
+                onClick={() => playList(episodeList, index)}
+              >
+                <Image
+                  src="/play.svg"
+                  alt="Tocar episodio"
+                  width={24}
+                  height={24}
+                />
+              </button>
             </div>
           )
         })}
@@ -83,7 +96,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      listEpisodes: episodes,
+      episodeList: episodes,
     },
   }
 }

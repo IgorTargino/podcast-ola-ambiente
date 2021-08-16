@@ -59,6 +59,28 @@
     -ms-transform: scale(1.1);
     transform: scale(1.1);
   }
+
+  button {
+    right: 2rem;
+    bottom: 2rem;
+
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--gradient-green-1);
+    border-radius: 5px;
+    font-size: 0;
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
 }
 
 .info {
