@@ -55,7 +55,7 @@ export default function Home({ episodeList }: Props): ReactNode {
                 <h1>{episode.title}</h1>
                 <span>{episode.members}</span>
                 <br></br>
-                <span>{episode.duration}</span>
+                <span>{episode.durationAsString}</span>
               </div>
 
               <button
