@@ -1,23 +1,16 @@
 import { createContext, ReactNode, useContext, useState } from 'react'
 
 interface Episode {
+  id: string
   title: string
   thumbnail: string
   members: string
+  description: string
   duration: number
   durationAsString: string
   url: string
   roteiro: string
 }
-
-interface PlayerContextData {
-  episodeList: Episode[]
-  currentEpisodeIndex: number
-  isPlaying: boolean
-  isLooping: boolean
-  isShuffling: boolean
-}
-
 interface PlayerContextProviderProps {
   children: ReactNode
 }
