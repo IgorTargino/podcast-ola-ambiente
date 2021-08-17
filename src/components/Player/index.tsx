@@ -2,6 +2,15 @@ import Image from 'next/image'
 
 import { useEffect, useRef, useState } from 'react'
 
+import {
+  BsArrowRepeat,
+  BsFillPauseFill,
+  BsFillPlayFill,
+  BsFillSkipEndFill,
+  BsFillSkipStartFill,
+  BsShuffle,
+} from 'react-icons/bs'
+
 import { usePlayer } from '../../context/PlayerContext'
 import convertDurationToTimeString from '../../utils/convertDurationToTimeString'
 
@@ -87,12 +96,7 @@ const Player = (): JSX.Element => {
                 onClick={toggleShuffle}
                 className={isShuffling ? styles.isActive : ''}
               >
-                <Image
-                  src="/shuffle.svg"
-                  alt="Embaralhar"
-                  width={15}
-                  height={15}
-                />
+                <BsShuffle size={15} color="#fff" />
               </button>
 
               <button
@@ -100,12 +104,7 @@ const Player = (): JSX.Element => {
                 onClick={playPrevious}
                 disabled={!episode || !hasPrevious}
               >
-                <Image
-                  src="/play-previous.svg"
-                  alt="Tocar anteriorr"
-                  width={15}
-                  height={15}
-                />
+                <BsFillSkipStartFill size={15} color="#fff" />
               </button>
 
               <button
@@ -115,9 +114,9 @@ const Player = (): JSX.Element => {
                 onClick={() => togglePlay()}
               >
                 {isPlaying ? (
-                  <Image src="/pause.svg" alt="Pausar" width={15} height={15} />
+                  <BsFillPauseFill size={15} color="#fff" />
                 ) : (
-                  <Image src="/play.svg" alt="Tocar" width={15} height={15} />
+                  <BsFillPlayFill size={15} color="#fff" />
                 )}
               </button>
 
@@ -126,12 +125,7 @@ const Player = (): JSX.Element => {
                 onClick={playNext}
                 disabled={!episode || !hasNext}
               >
-                <Image
-                  src="/play-next.svg"
-                  alt="Tocar próxima"
-                  width={15}
-                  height={15}
-                />
+                <BsFillSkipEndFill size={15} color="#fff" />
               </button>
 
               <button
@@ -140,7 +134,7 @@ const Player = (): JSX.Element => {
                 onClick={toggleLoop}
                 className={isLooping ? styles.isActive : ''}
               >
-                <Image src="/repeat.svg" alt="Repetir" width={15} height={15} />
+                <BsArrowRepeat size={15} color="#fff" />
               </button>
             </div>
 
@@ -148,9 +142,9 @@ const Player = (): JSX.Element => {
               <span>{convertDurationToTimeString(progress ?? 0)}</span>
               <div className={styles.slider}>
                 <Slider
-                  trackStyle={{ backgroundColor: '#04d361' }}
-                  railStyle={{ backgroundColor: '#9f75ff' }}
-                  handleStyle={{ borderColor: '04d361', borderWidth: 4 }}
+                  trackStyle={{ backgroundColor: '#44bd32' }}
+                  railStyle={{ backgroundColor: '#fff' }}
+                  handleStyle={{ borderColor: '#44bd32', borderWidth: 4 }}
                   max={episode.duration}
                   value={progress}
                   onChange={handleSeek}
