@@ -64,21 +64,21 @@ const Player = (): JSX.Element => {
 
   return (
     <div className={episode ? styles.container : styles.none}>
-      <div className={styles.profile}>
-        <Image
-          src="/perfil.jpg"
-          width={60}
-          height={60}
-          alt="Capa do episodio"
-        />
-        <div>
-          <h2>Title</h2>
-          <span>Anna, Robson, Anderson</span>
-        </div>
-      </div>
-
       {episode && (
         <>
+          <div className={styles.profile}>
+            <Image
+              src={episode.thumbnail}
+              width={60}
+              height={60}
+              alt="Capa do episodio"
+            />
+            <div>
+              <h2>{episode.title}</h2>
+              <span>{episode.members}</span>
+            </div>
+          </div>
+
           <div className={styles.playTools}>
             <div className={styles.buttons}>
               <button
