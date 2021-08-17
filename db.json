@@ -1,7 +1,7 @@
 {
   "episodes": [
     {
-      "id": "1",
+      "id": "lixo-eletronico",
       "title": "Lixo eletrônico",
       "members": "Maura Anastacia",
       "thumbnail": "https://storage.googleapis.com/podcast-ola-mundo/imgs/lixo-eletronico.jpg",
@@ -14,7 +14,7 @@
       "roteiro": "https://storage.googleapis.com/podcast-ola-mundo/roteiros/LixoEletr%C3%B4nico.pdf"
     },
     {
-      "id": "2",
+      "id": "tratamento-de-agua",
       "title": "Tratamento de água",
       "members": "Maura Anastacia e Jorge Marinho",
       "thumbnail": "https://storage.googleapis.com/podcast-ola-mundo/imgs/tratament-de-agua.jpg",
@@ -27,7 +27,7 @@
       "roteiro": "https://storage.googleapis.com/podcast-ola-mundo/roteiros/Tratamento%20de%20%C3%A1gua.pdf"
     },
     {
-      "id": "3",
+      "id": "efeito-estufa",
       "title": "Efeito estufa",
       "members": "Maura Anastacia e Levi Souza",
       "thumbnail": "https://storage.googleapis.com/podcast-ola-mundo/imgs/efeito-estufa.jpg",
@@ -40,7 +40,7 @@
       "roteiro": "https://storage.googleapis.com/podcast-ola-mundo/roteiros/Acidifica%C3%A7%C3%A3odosoceanos.pdf"
     },
     {
-      "id": "5",
+      "id": "acidificacao-dos-oceanos-branqueamento-dos-corais",
       "title": "Acidificação dos oceanos/ Branqueamentos dos corais",
       "members": "Maura Anastacia",
       "thumbnail": "https://storage.googleapis.com/podcast-ola-mundo/imgs/acidificacao.jpg",
