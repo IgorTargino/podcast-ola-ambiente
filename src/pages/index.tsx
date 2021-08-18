@@ -1,5 +1,6 @@
 import { GetStaticProps } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import { ReactNode } from 'react'
 import { usePlayer } from '../context/PlayerContext'
 import api from '../services/api'
@@ -22,9 +23,11 @@ interface EpisodeData {
 }
 
 interface Episode {
+  id: string
   title: string
   thumbnail: string
   members: string
+  description: string
   duration: number
   durationAsString: string
   url: string
@@ -35,7 +38,7 @@ interface Props {
   episodeList: Array<Episode>
 }
 
-export default function Home({ episodeList }: Props): ReactNode {
+const Home = ({ episodeList }: Props): ReactNode => {
   const { playList } = usePlayer()
 
   return (
@@ -44,13 +47,15 @@ export default function Home({ episodeList }: Props): ReactNode {
         {episodeList.map((episode, index) => {
           return (
             <div className={styles.episode} key={index}>
-              <Image
-                src={episode.thumbnail}
-                alt="logo"
-                width={150}
-                height={150}
-                quality={100}
-              />
+              <Link href={`/episodes/${episode.id}`} passHref>
+                <Image
+                  src={episode.thumbnail}
+                  alt="logo"
+                  width={150}
+                  height={150}
+                  quality={100}
+                />
+              </Link>
               <div className={styles.info}>
                 <h1>{episode.title}</h1>
                 <span>{episode.members}</span>
@@ -82,6 +87,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const episodes = data.map((episode: EpisodeData) => {
     return {
+      id: episode.id,
       title: episode.title,
       thumbnail: episode.thumbnail,
       members: episode.members,
@@ -100,3 +106,5 @@ export const getStaticProps: GetStaticProps = async () => {
     },
   }
 }
+
+export default Home
