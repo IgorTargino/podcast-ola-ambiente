@@ -20,9 +20,9 @@
       "thumbnail": "https://storage.googleapis.com/podcast-ola-mundo/imgs/tratament-de-agua.jpg",
       "description": "<p>Este episódio aborda sobre o Tratamento de água. A água faz parte de vários processos essenciais para a manutenção da vida. Usamos ela para beber, tomar banho, na produção de alimentos, na indústria, além disso, cobre cerca de 71% da superfície da Terra (GRASSI, 2001), como, também, compõe aproximadamente 70% do corpo humano (FREITAS e VASCONCELOS, 2019). Desta forma, a potabilização da água é necessária para manutenção de uma boa qualidade de vida para o ser humano. E para a nossa conversa, teremos um convidado especialista na área de tratamento de água, Jorge Marinho. </p>",
       "file": {
-        "url": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/audios/funcional.m4a",
-        "type": "audio/x-m4a",
-        "duration": 4237
+        "url": "https://storage.googleapis.com/podcast-ola-mundo/podcasts/tratamento-de-agua.mp3",
+        "type": "audio/mp3",
+        "duration": 1139
       },
       "roteiro": "https://storage.googleapis.com/podcast-ola-mundo/roteiros/Tratamento%20de%20%C3%A1gua.pdf"
     },
@@ -33,11 +33,11 @@
       "thumbnail": "https://storage.googleapis.com/podcast-ola-mundo/imgs/efeito-estufa.jpg",
       "description": "<p>Um assunto bastante comentado e estudado, é o efeito estufa. Nessa perspectiva, conversaremos como funciona o processo físico-químico do efeito estufa, aimportância para o equilíbrio térmico da Terra, consequências e o atual cenário que oBrasil se encontra em emissões dos gases de efeito estufa (GEE). E para nossa conversa,teremos um convidado Levi Souza.</p>",
       "file": {
-        "url": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/audios/microservicos.m4a",
-        "type": "audio/x-m4a",
-        "duration": 5506
+        "url": "https://storage.googleapis.com/podcast-ola-mundo/podcasts/efeito-estufa.mp3",
+        "type": "audio/mp3",
+        "duration": 533
       },
-      "roteiro": "https://storage.googleapis.com/podcast-ola-mundo/roteiros/Acidifica%C3%A7%C3%A3odosoceanos.pdf"
+      "roteiro": "https://storage.googleapis.com/podcast-ola-mundo/roteiros/Efeito%20Estufa.pdf"
     },
     {
       "id": "acidificacao-dos-oceanos-branqueamento-dos-corais",
