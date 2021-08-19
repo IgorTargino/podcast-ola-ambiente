@@ -92,7 +92,7 @@ const Player = (): JSX.Element => {
             <div className={styles.buttons}>
               <button
                 type="button"
-                disabled={!episode || episodeList.length === 1}
+                disabled={episodeList.length === 1}
                 onClick={toggleShuffle}
                 className={isShuffling ? styles.isActive : ''}
               >
@@ -102,7 +102,7 @@ const Player = (): JSX.Element => {
               <button
                 type="button"
                 onClick={playPrevious}
-                disabled={!episode || !hasPrevious}
+                disabled={!hasPrevious}
               >
                 <BsFillSkipStartFill size={15} color="#fff" />
               </button>
@@ -110,7 +110,6 @@ const Player = (): JSX.Element => {
               <button
                 type="button"
                 className={styles.playButton}
-                disabled={!episode}
                 onClick={() => togglePlay()}
               >
                 {isPlaying ? (
@@ -120,17 +119,12 @@ const Player = (): JSX.Element => {
                 )}
               </button>
 
-              <button
-                type="button"
-                onClick={playNext}
-                disabled={!episode || !hasNext}
-              >
+              <button type="button" onClick={playNext} disabled={!hasNext}>
                 <BsFillSkipEndFill size={15} color="#fff" />
               </button>
 
               <button
                 type="button"
-                disabled={!episode}
                 onClick={toggleLoop}
                 className={isLooping ? styles.isActive : ''}
               >
