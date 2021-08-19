@@ -5,9 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* <link rel="manifest" href="/manifest.json" /> */}
-          {/* <link rel="apple-touch-icon" href="/icon.png"></link> */}
-          {/* <link rel="shortcut icon" href="/favicon.png" type="image/png" /> */}
+          <link rel="shortcut icon" href="/favicon.png" type="image/png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
@@ -15,6 +13,8 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <meta name="theme-color" content="#fff" />
+
+          <title>Olá, ambiente sou eu de novo.</title>
         </Head>
         <body>
           <Main />
