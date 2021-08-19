@@ -1,10 +1,11 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
+import Image from 'next/image'
 
 import api from '../../services/api'
+import { usePlayer } from '../../context/PlayerContext'
 import convertDurationToTimeString from '../../utils/convertDurationToTimeString'
 
-import { usePlayer } from '../../context/PlayerContext'
-
+import { BsCaretDownFill, BsFillPlayFill } from 'react-icons/bs'
 import styles from './styles.module.scss'
 
 interface Episode {
@@ -36,7 +37,42 @@ const Episode = ({ episode }: EpisodeProps): JSX.Element => {
 
   return (
     <div className={styles.container}>
-      <h1>{episode.title}</h1>
+      <div className={styles.episodeContainer}>
+        <header>
+          <div className={styles.profile}>
+            <Image
+              src={episode.thumbnail}
+              width={60}
+              height={60}
+              alt={episode.title}
+            />
+            <div>
+              <h2>{episode.title}</h2>
+              <span>{episode.members}</span>
+            </div>
+          </div>
+          <button type="button" onClick={() => play(episode)}>
+            <BsFillPlayFill size={15} color="#fff" />
+          </button>
+        </header>
+
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{ __html: episode.description }}
+        ></div>
+
+        <button
+          className={styles.buttonDownload}
+          type="submit"
+          onClick={() => window.open(episode.roteiro)}
+        >
+          <a href={episode.roteiro} download={episode.id}></a>
+          Roteiro
+          <div>
+            <BsCaretDownFill size={15} color="#fff" />
+          </div>
+        </button>
+      </div>
     </div>
   )
 }
