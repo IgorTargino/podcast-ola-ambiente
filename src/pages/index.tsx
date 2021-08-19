@@ -2,6 +2,7 @@ import { GetStaticProps } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ReactNode } from 'react'
+import { BsFillPlayFill } from 'react-icons/bs'
 import { usePlayer } from '../context/PlayerContext'
 import api from '../services/api'
 import convertDurationToTimeString from '../utils/convertDurationToTimeString'
@@ -67,12 +68,7 @@ const Home = ({ episodeList }: Props): ReactNode => {
                 type="button"
                 onClick={() => playList(episodeList, index)}
               >
-                <Image
-                  src="/play.svg"
-                  alt="Tocar episodio"
-                  width={24}
-                  height={24}
-                />
+                <BsFillPlayFill size={15} color="#fff" />
               </button>
             </div>
           )
