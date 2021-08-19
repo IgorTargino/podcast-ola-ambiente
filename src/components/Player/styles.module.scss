@@ -17,6 +17,10 @@
   background: var(--background);
 
   transition: height 0.5s;
+
+  @media (max-width: 425px) {
+    display: flex;
+  }
 }
 
 .none {
@@ -29,6 +33,11 @@
   align-items: center;
 
   gap: 0.5rem;
+
+  @media (max-width: 420px) {
+    display: none;
+    justify-content: center;
+  }
 
   img {
     border-radius: 30px;
@@ -138,4 +147,10 @@
 
 .slider {
   flex: 1;
+}
+
+.invisble {
+  @media (max-width: 425px) {
+    display: none;
+  }
 }

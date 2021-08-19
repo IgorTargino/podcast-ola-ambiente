@@ -148,7 +148,7 @@ const Player = (): JSX.Element => {
             </div>
           </div>
 
-          <div></div>
+          <div className={styles.invisble}></div>
 
           <audio
             src={episode.url}
