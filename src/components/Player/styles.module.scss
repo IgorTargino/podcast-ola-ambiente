@@ -150,7 +150,23 @@
 }
 
 .invisble {
-  @media (max-width: 425px) {
-    display: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    background: transparent;
+
+    &:hover {
+      filter: brightness(0.7);
+    }
   }
+
+  // @media (max-width: 425px) {
+  //   display: none;
+  // }
 }

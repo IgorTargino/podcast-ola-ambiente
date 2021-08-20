@@ -11,6 +11,8 @@ import {
   BsShuffle,
 } from 'react-icons/bs'
 
+import { AiOutlineClose } from 'react-icons/ai'
+
 import { usePlayer } from '../../context/PlayerContext'
 import convertDurationToTimeString from '../../utils/convertDurationToTimeString'
 
@@ -148,7 +150,11 @@ const Player = (): JSX.Element => {
             </div>
           </div>
 
-          <div className={styles.invisble}></div>
+          <div className={styles.invisble}>
+            <button type="button" onClick={clearPlayerState}>
+              <AiOutlineClose size={15} color="#d7d7d7" />
+            </button>
+          </div>
 
           <audio
             src={episode.url}
