@@ -33,8 +33,8 @@
       "thumbnail": "https://storage.googleapis.com/podcast-ola-mundo/imgs/lixo-eletronico.jpg",
       "description": "<p>Este episódio aborda sobre o lixo eletrônico. Estamos deparando-se constantemente com anúncios e propagandas que fomentam o consumo. Quase todo dia a mídia propaga lançamentos ou versões mais atualizadas de equipamentos eletroeletrônicos (EEE) e sempre instigando ao consumismo, que é uma prática maléfica, visto que, leva a comprar excessivamente e até mesmo sem necessidade. Atrelado a isto, a vida útil dos EEE é um outro fator que leva ao consumidor aderir a novos dispositivos. De acordo com o El País (2018), um celular poderia durar em média 12 anos, se não fosse a obsolescência programada, que limita o tempo de uso</p>",
       "file": {
-        "url": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-podcastr/audios/opensource.m4a",
-        "type": "audio/x-m4a",
+        "url": "",
+        "type": "",
         "duration": 542
       },
       "roteiro": "https://storage.googleapis.com/podcast-ola-mundo/roteiros/LixoEletr%C3%B4nico.pdf"
