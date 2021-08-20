@@ -13,10 +13,9 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <meta name="theme-color" content="#fff" />
-
-          <title>Olá, ambiente sou eu de novo.</title>
         </Head>
         <body>
+          <title>Olá, ambiente sou eu de novo.</title>
           <Main />
           <NextScript />
         </body>
