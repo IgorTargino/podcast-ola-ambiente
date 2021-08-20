@@ -1,34 +1,109 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/IgorTargino/podcast-ola-ambiente?color=%2304D361&style=flat">
 
-## Getting Started
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/IgorTargino/podcast-ola-ambiente?style=flat">
+  
+  <a href="https://github.com/IgorTargino/podcast-ola-ambiente/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/IgorTargino/podcast-ola-ambiente?style=flat">
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat">
+  
+</p>
 
-First, run the development server:
+## 🧐 Sobre o projeto
 
-```bash
-npm run dev
-# or
-yarn dev
+Uma aplicação para ouvir podcasts :headphones: <br>
+<a align="center" target="blank" href="https://podcast-ola-ambiente.vercel.app/">
+<img alt="Site podcast Ola Ambiente" src="https://img.shields.io/static/v1?label=site&message=podcast-ola-ambiente&color=4953B8&style=flat&logo=vercel">
+</a>
+
+## 🎨 Layout
+
+|         Tela 1 - desktop          |         Tela 2 - desktop          |
+| :-------------------------------: | :-------------------------------: |
+| ![](./.github/tela-desktop-1.png) | ![](./.github/tela-desktop-2.png) |
+
+|         Tela 1 - mobile          |         Tela 2 - mobile          |
+| :------------------------------: | :------------------------------: |
+| ![](./.github/tela-mobile-1.png) | ![](./.github/tela-mobile-2.png) |
+
+## ⚙️ Funcionalidades
+
+- [x] Player:
+  - [x] Botão togglePlay - para tocar/pausar o episódio;
+  - [x] Botão shuffle - para tocar em ordem aleatória;
+  - [x] Botão loop - para tocar o podcast atual em loop;
+  - [x] Botão next - para tocar o próximo podcast;
+  - [x] Botão previous - para tocar o podcast anterior;
+  - [x] Botão close - para fehcar o player
+  - [x] Slider - para controle de minutagem do podcast;
+- [x] Página Home:
+  - [x] Listagem dos episódios lançados;
+  - [x] Botão play para tocar o episódio selecionado;
+- [x] Página do Episódio:
+  - [x] Descrição e informações do episódio;
+  - [x] Botão de play para tocar o episódio;
+  - [x] Botão de roteiro - para download do roteiro do episódio em pdf;
+- [x] Responsividade;
+- [x] Animação;
+
+## Como executar o projeto
+
+### Pré-requisitos
+
+- git
+- Node.js
+- NPM ou Yarn
+
+### Variáveis de Ambiente
+
+Além das ferramentas anteriores é necessária criar uma váriavel de ambiente .env.local na raiz do projeto e adicionar a seguinte variável
+
+API_URL=https://my-json-server.typicode.com/IgorTargino/podcast-ola-ambiente
+
+### Instalação
+
+```
+# Abra o terminal e copie este repositório com o comando
+$ git clone https://github.com/IgorTargino/podcast-ola-ambiente.git
+
+# Acesse a pasta do projeto no prompt de comando
+$ cd podcast-ola-ambiente
+
+# Instale as dependências
+yarn install
+ou
+$ npm install
+
+# Execute a aplicação
+$ yarn dev
+ou
+$ npm run dev
+
+# Acesse http://localhost:3000 no seu navagador.
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tecnologias
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Tecnologias utilizadas para desenvolver o projeto:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
+- next.js
+  - SSR e SSG
+- react.js
+- typescript
+- context
+- axios
+- sass
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 🦸‍♂️ **Autor**
 
-## Learn More
+<p>
+ <sub><strong>🌟 Igor Targino Marinho🌟</strong></sub>
+</p>
 
-To learn more about Next.js, take a look at the following resources:
+[![Linkedin Badge](https://img.shields.io/badge/-IgorTargino-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/igor-targino/)](https://www.linkedin.com/in/igor-targino/)
+[![Gmail Badge](https://img.shields.io/badge/-igortargino01@gmail.com-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:igortargino01@gmail.com)](mailto:igortargino01@gmail.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> Se te ajudou, dá ⭐, vai me ajudar também 😉
